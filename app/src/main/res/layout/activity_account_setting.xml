@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/welcome_screen_bg_color"
+    tools:context=".activities.AccountSettingActivity">
+
+    <RelativeLayout
+        android:id="@+id/accountSettingPrivacyRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="16dp"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/ivAccountSettingPrivacyIcon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/ic_baseline_privacy_24"
+            app:tint="#8696a0"
+            tools:ignore="ContentDescription" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/ivAccountSettingPrivacyIcon"
+            android:text="@string/privacy"
+            android:textColor="@color/settings_page_header_color"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/accountSettingSecurityRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/accountSettingPrivacyRL"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="16dp"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/ivAccountSettingSecurityIcon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/ic_baseline_security_24"
+            app:tint="#8696a0"
+            tools:ignore="ContentDescription" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/ivAccountSettingSecurityIcon"
+            android:text="@string/security"
+            android:textColor="@color/settings_page_header_color"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/accountSettingTwoStepVerificationRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/accountSettingSecurityRL"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="16dp"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/ivAccountSettingTwoStepVerificationIcon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:background="#8696a0"
+            android:src="@drawable/ic_baseline_more_horiz_24"
+            app:tint="@color/main_fragments_bg_color"
+            tools:ignore="ContentDescription" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/ivAccountSettingTwoStepVerificationIcon"
+            android:text="@string/two_step_verification"
+            android:textColor="@color/settings_page_header_color"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/accountSettingChangeNumberRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/accountSettingTwoStepVerificationRL"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="16dp"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/ivAccountChangeNumberIcon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/ic_baseline_change_number_24"
+            app:tint="#8696a0"
+            tools:ignore="ContentDescription" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/ivAccountChangeNumberIcon"
+            android:text="@string/change_number"
+            android:textColor="@color/settings_page_header_color"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/accountSettingRequestAccountinfoRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/accountSettingChangeNumberRL"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="16dp"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/ivAccountRequestAccountInfoIcon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/ic_baseline_account_info_24"
+            app:tint="#8696a0"
+            tools:ignore="ContentDescription" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/ivAccountRequestAccountInfoIcon"
+            android:text="@string/request_accoun_info"
+            android:textColor="@color/settings_page_header_color"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/accountSettingDeleteAccountRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/accountSettingRequestAccountinfoRL"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="16dp"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/ivAccountDeleteAccountIcon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/ic_baseline_delete_24"
+            app:tint="#8696a0"
+            tools:ignore="ContentDescription" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/ivAccountDeleteAccountIcon"
+            android:text="@string/delete_account"
+            android:textColor="@color/settings_page_header_color"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/accountSettingLogOutRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/accountSettingDeleteAccountRL"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="16dp"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/ivAccountLogoutIcon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/ic_baseline_logout_24"
+            app:tint="#8696a0"
+            tools:ignore="ContentDescription" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/ivAccountLogoutIcon"
+            android:text="@string/logout"
+            android:textColor="@color/settings_page_header_color"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

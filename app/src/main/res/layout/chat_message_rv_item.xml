@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:id="@+id/mainrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        tools:ignore="UselessLeaf,UselessParent">
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessLeaf">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/groupCardView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:backgroundTint="@color/profile_picture_bg_tint"
+                app:cardCornerRadius="50dp">
+
+                <ImageView
+                    android:id="@+id/ivUserProfilePicture"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/new_group_picture_txt"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/user"
+                    app:tint="@color/white" />
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/rl1"
+            tools:ignore="UselessLeaf">
+
+            <TextView
+                android:id="@+id/tvChatTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/tvLastSeenTime"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/settings_page_header_color"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="SHAKSHAM" />
+
+            <TextView
+                android:id="@+id/tvLastSeenTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="12dp"
+                android:textAlignment="textEnd"
+                android:textColor="@color/settings_page_header_color"
+                android:textSize="12sp"
+                android:visibility="gone"
+                tools:text="Yesterday" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl2"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/rl1"
+            tools:ignore="UselessLeaf">
+
+            <ImageView
+                android:id="@+id/ivMessageStatusTick"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/message_status_tick_text"
+                android:rotationY="10"
+                android:src="@drawable/blue_tick"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvChatMessagePreview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/ivMessageStatusTick"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/settings_page_header_color"
+                tools:text="This is Sample Examlpe of WhatsApp message to sent to the user" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

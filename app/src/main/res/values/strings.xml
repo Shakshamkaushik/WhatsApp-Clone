@@ -1,0 +1,135 @@
+<resources>
+    <string name="app_name">WhatsApp Clone</string>
+    <string name="welcomeWhatsApp">Welcome to WhatsApp</string>
+    <string name="whatsAppPolicyText">Read our <font fgcolor='#569ABC'>Privacy Policy</font> .Tap "Agree and Continue to \n accept the <font color='#569ABC'>Terms of Service.</font></string>
+    <string name="agreeAndContinue">AGREE AND CONTINUE</string>
+    <string name="verify_your_phone_number">Verify Your Phone Number</string>
+    <string name="verify_phone_header_text">Verify %s</string>
+    <string name="whatsapp_verify_text">WhatsApp will send an SMS message(carrier \ncharges may apply) to verify you phone number.\n Enter Your Country Code and Number</string>
+    <string name="waiting_is_automatically_detect_an_sms_sent_to">Waiting is Automatically detect an SMS sent to</string>
+    <string name="wrong_number">Wrong Number</string>
+    <string name="enter_phone_country_code">+%d</string>
+    <string name="block_user_text">Block %s</string>
+    <string name="report_user_text">Report %s</string>
+    <string name="phone_number_ongoing_verification">%s.</string>
+    <string name="call_me">Call me</string>
+    <string name="resend_otp">Resend Otp</string>
+    <string name="please_provide_your_name_and_an_optional_profile_photo">Please provide your name and an optional profile photo</string>
+    <string name="profile_setup">Profile Setup</string>
+    <string name="enter_phone_number">enter phone number</string>
+    <string name="_91">+ 91</string>
+    <string name="next">Next</string>
+    <string name="from_n_n_facebook">from \n\n FACEBOOK</string>
+    <string name="enter_6_digit_code">Enter 6- Digit Code</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="chats">Chats</string>
+    <string name="updates">Updates</string>
+    <string name="calls">Calls</string>
+    <string-array name="countries_name">
+        <item>India</item>
+        <item>Dubai</item>
+        <item>United States</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="search">Search..</string>
+    <string name="new_group_picture_txt">New Group Picture</string>
+    <string name="message_status_tick_text">Message Status Tick Text</string>
+    <string name="select_contact">Select contact</string>
+    <string name="send_message_delivery_status">Send Message Delivery Status</string>
+    <string name="all_contacts_count">%d contacts</string>
+    <string name="back_to_all_chats">Back To All Chats</string>
+    <string name="send_message_button">Send Message Button</string>
+    <string name="user_profile_picture">User Profile Picture</string>
+    <string name="encryption_footer">Messages and calls are end-to-end encrypted.Tap to learn more.</string>
+    <string name="chat_lock_footer">Lock and hide this chat on this device</string>
+    <string name="message">Message</string>
+    <string name="audio">Audio</string>
+    <string name="video">Video</string>
+    <string name="pay">Pay</string>
+    <string name="whats_app_demo_status">Hey There, I\'m using WhatsApp Clone and this is a long status text to show</string>
+    <string name="whatsapp_status_date">28 March</string>
+    <string name="media_links_and_docs">Media,links, and docs</string>
+    <string name="number">%d</string>
+    <string name="phone_number">%s</string>
+    <string name="mute_notification">Mute Notification</string>
+    <string name="custom_notifications">Custom Notifications</string>
+    <string name="media_visibility">Media visibility</string>
+    <string name="media_visibility_footer">Show newly downloaded media in your phone\'s gallery</string>
+    <string name="encryption">Encryption</string>
+    <string name="disappearing_messages">Disappearing messages</string>
+    <string name="chat_lock">Chat Lock</string>
+    <string name="user_profile_picture_txt">User Profile Picture</string>
+    <string name="registered_user_name">%s</string>
+    <string name="account">Account</string>
+    <string name="privacy">Privacy</string>
+    <string name="privacy_security_change_number">Privacy security Change Number</string>
+    <string name="theme_wallpaper_chat_history">Theme,wallpapers,chat history</string>
+    <string name="notifications">Notifications</string>
+    <string name="message_group_call_tones"><![CDATA[Message,group & call tones]]></string>
+    <string name="storage_and_data">Storage and data</string>
+    <string name="network_usage_auto_download">Network usage,auto-download</string>
+    <string name="help">Help</string>
+    <string name="help_centre_contact_us_privacy_policy">Help center,contact us,privacy policy</string>
+    <string name="invite_a_friend">Invite a friend</string>
+    <string name="made_with_by">From</string>
+    <string name="shaksham_sharma">Saksham Sharma</string>
+    <string name="block_contacts_disapperaing_messages">Block contacts,disapperaing messages</string>
+    <string name="security">Security</string>
+    <string name="logout">LogOut</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="request_accoun_info">Request Accoun Info</string>
+    <string name="change_number">Change Number</string>
+    <string name="two_step_verification">Two step verification</string>
+    <string name="display">Display</string>
+    <string name="wallpaper">Wallpaper</string>
+    <string name="theme">Theme</string>
+    <string name="chat_settings">Chat Settings</string>
+    <string name="enter_is_send">Enter is Send</string>
+    <string name="enter_key_will_send_your_message">Enter key will send your message</string>
+    <string name="font_size">Font Size</string>
+    <string name="archieve_chats">Archieve Chats</string>
+    <string name="keep_chats_archived">Keep chats archived</string>
+    <string name="keep_chats_archive_footer">Archive chats will remain archived when you received a new message</string>
+    <string name="app_language">App language</string>
+
+
+    <string name="lan_device">Phone\'s Language (%s)</string>
+    <string name="lan_english">English</string>
+    <string name="lan_hindi">हिन्दी</string>
+    <string name="lan_gujarati">ગુજરાતી</string>
+    <string name="lan_marathi">मराठी</string>
+    <string name="lan_punjabi">ਪੰਜਾਬੀ</string>
+    <string name="chat_history">Chat History</string>
+    <string name="chat_backup">Chat Backup</string>
+    <string name="system_theme_text">System Theme</string>
+    <string name="light_theme_text">Light Theme</string>
+    <string name="dark_theme_text">Dark Theme</string>
+    <string name="small">Small</string>
+    <string name="medium">Medium</string>
+    <string name="large">Large</string>
+    <string name="contact_us">Contact us</string>
+    <string name="questions_need_help">Question need help</string>  <string name="payment_disclaimer_msg">To protect your security, WhatsApp does not store your UPI PIN or full bank account number. <a href="#">Learn more</a></string>
+    <string name="this_is_not_your_username_or_pin_this_name_will_be_visible_to_your_contacts">This is not your username or pin. This name will be visible to your contacts</string>
+
+    <string name="terms_and_privacy_policy">Terms and Privacy policy</string>
+    <string name="app_info">App info</string>
+    <string name="app_info_background_image">App Info Background Image</string>
+    <string name="whatsapp_clone_app_info">WhatsApp Clone Info</string>
+    <string name="app_info_version">App Info Version %d %s</string>
+    <string name="app_logo">App logo</string>
+    <string name="licenses">Licenses</string>
+    <string name="_2024_saksham">2024 - Saksham</string>
+    <string name="new_payment">New Payment</string>
+    <string name="all_payment_method">Add Payment Method</string>
+    <string name="payment_methods">Payment Methods</string>
+    <string name="no_payment_history">No Pyment History</string>
+    <string name="history">History</string>
+    <string name="profile_setting_phone">Phone</string>
+    <string name="profile_setting_about">About</string>
+    <string name="profile_setting_name">Name</string>
+    <string name="my_status_text">My Status</string>
+    <string name="tap_to_add_status_update_text">TAp to Update Status text</string>
+    <string name="recent_updates_text">Recent updates</string>
+</resources>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_fragments_bg_color"
+    tools:context=".activities.UpdateProfileInfoActivity">
+
+
+    <!-- Image Section -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/updateProfileToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <RelativeLayout
+        android:id="@+id/updateProfileInfoUpdateRL"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:layout_below="@id/updateProfileToolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        tools:ignore="UselessParent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/profileSectionInfoCardView"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/profile_picture_bg_tint"
+            app:cardCornerRadius="80dp">
+
+            <ImageView
+                android:id="@+id/ivProfileUpdate"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/user_profile_picture"
+                android:scaleType="centerCrop"
+                android:src="@drawable/user"
+                app:tint="@color/profile_picture_tint_color" />
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/newProfilePictureSettingFab"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-48dp"
+            android:layout_toEndOf="@id/profileSectionInfoCardView"
+            android:backgroundTint="#00a884"
+            android:src="@drawable/small_camera"
+            app:fabCustomSize="48dp"
+            app:fabSize="auto"
+            app:tint="#ffffff"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+
+    <!-- Details Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updateProfileInfoUpdateRL"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <!-- Name -->
+        <RelativeLayout
+            android:id="@+id/updateProfileUpdateNameRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingBottom="16dp">
+
+            <RelativeLayout
+                android:id="@+id/updateProfileUpdateRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:id="@+id/ivProfileUser"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:src="@drawable/user"
+                    app:tint="#8696a0"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toStartOf="@id/ivUpdateProfileNameEdit"
+                    android:layout_toEndOf="@id/ivProfileUser"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profile_setting_name"
+                        android:textColor="#8696a0" />
+
+                    <TextView
+                        android:id="@+id/tvUpdateProfileName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/settings_page_header_color"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText"
+                        tools:text="Akhilesh Garg" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivUpdateProfileNameEdit"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_baseline_edit_24"
+                    app:tint="#00a884"
+                    tools:ignore="ContentDescription" />
+            </RelativeLayout>
+
+            <!-- Name lecture -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/updateProfileUpdateRL"
+                android:layout_marginStart="73dp"
+                android:layout_marginTop="-8dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/this_is_not_your_username_or_pin_this_name_will_be_visible_to_your_contacts"
+                android:textColor="#8696a0" />
+
+        </RelativeLayout>
+
+
+        <!-- Horizontal Line 1 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.66dp"
+            android:layout_marginStart="73dp"
+            android:background="@color/settings_page_horizontal_line" />
+
+
+        <!-- About -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="16dp"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:id="@+id/ivprofileSettingAbout"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="24dp"
+                android:src="@drawable/ic_baseline_info_24"
+                app:tint="#8696a0"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_toStartOf="@id/ivUpdateProfileAboutEdit"
+                android:layout_toEndOf="@id/ivprofileSettingAbout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_setting_about"
+                    android:textColor="#8696a0" />
+
+                <TextView
+                    android:id="@+id/tvUpdateProfileAbout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textColor="@color/settings_page_header_color"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText"
+                    tools:text="Don't be a CSS to my HTML, be JavaScript" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivUpdateProfileAboutEdit"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_baseline_edit_24"
+                app:tint="#00a884"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+
+
+        <!-- Horizontal Line 2 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.66dp"
+            android:layout_marginStart="73dp"
+            android:background="@color/settings_page_horizontal_line" />
+
+
+        <!-- Phone -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="16dp"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:id="@+id/ivProfileSettingPhone"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="24dp"
+                android:src="@drawable/ic_baseline_call_24"
+                app:tint="#8696a0"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_toEndOf="@id/ivProfileSettingPhone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_setting_phone"
+                    android:textColor="#8696a0" />
+
+                <TextView
+                    android:id="@+id/tvUpdateProfilePhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="+91 9643454500"
+                    android:textColor="@color/settings_page_header_color"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/updateProfilePictureProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#90000000"
+        android:clickable="true"
+        android:visibility="gone"
+        android:focusable="true">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

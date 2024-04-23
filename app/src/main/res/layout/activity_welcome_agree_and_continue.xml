@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/welcome_to_whatsapp_main_screen"
+    tools:context=".activities.WelcomeAgreeAndContinueActivity">
+
+    <TextView
+        android:id="@+id/tvWelcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="@string/welcomeWhatsApp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivWelcomeImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWelcomeText"
+        app:srcCompat="@drawable/welcome_screen_logo" />
+
+    <TextView
+        android:id="@+id/tvTermsConditionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="@string/whatsAppPolicyText"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivWelcomeImage" />
+
+    <Button
+        android:id="@+id/btnAgreeAndContinue"
+        style="@style/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="35dp"
+        android:text="@string/agreeAndContinue"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvTermsConditionText"
+        app:layout_constraintStart_toStartOf="@+id/tvTermsConditionText"
+        app:layout_constraintTop_toBottomOf="@+id/tvTermsConditionText" />
+
+    <TextView
+        android:id="@+id/tvSponserText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/from_n_n_facebook"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/allerta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnAgreeAndContinue"
+        app:layout_constraintStart_toStartOf="@+id/btnAgreeAndContinue"
+        app:layout_constraintTop_toBottomOf="@+id/btnAgreeAndContinue" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

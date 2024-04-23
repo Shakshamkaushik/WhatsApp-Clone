@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/welcome_screen_bg_color"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.EnterPhoneNumberActivity">
+
+    <RelativeLayout
+        android:id="@+id/enter_Phone_Number_Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp">
+
+        <TextView
+            android:id="@+id/tvVerifyNumberText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/verify_your_phone_number"
+            android:textAlignment="center"
+            android:textColor="@color/verify_your_number_title_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="15dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/three_dot_vertical" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/enter_Phone_Number_Description_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enter_Phone_Number_Text">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/whatsapp_verify_text"
+            android:textAlignment="center"
+            android:textColor="#2D3235"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/countryPickSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enter_Phone_Number_Description_text"
+        android:orientation="vertical">
+
+
+        <Spinner
+            android:id="@+id/countryCode_picker_enter_phone"
+            android:layout_width="match_parent"
+            android:background="@color/tab_layout_bg_color"
+            android:layout_height="35dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginEnd="27dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@color/country_spinner_underline_color" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rvCountryCodeAndNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/countryPickSpinner"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <EditText
+                android:id="@+id/etCountryCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:autofillHints=""
+                android:backgroundTint="@color/country_spinner_underline_color"
+                android:enabled="false"
+                android:focusable="false"
+                android:importantForAutofill="no"
+                android:textColor="@color/country_code_number_text_color"
+                tools:text= "+91"
+                android:textAlignment="center"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/etPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:autofillHints=""
+                android:backgroundTint="@color/country_spinner_underline_color"
+                android:ems="10"
+                android:hint="@string/enter_phone_number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textAlignment="center"
+                android:textColor="@color/settings_page_header_color"
+                android:textColorHint="@color/settings_page_header_color"
+                tools:ignore="LabelFor,TextFields" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnNext"
+            style="@style/next_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/next" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlVerfyNumberProgeessBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/verifyNumberProgressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

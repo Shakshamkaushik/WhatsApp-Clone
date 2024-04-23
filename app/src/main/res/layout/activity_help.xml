@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/welcome_screen_bg_color"
+    tools:context=".activities.HelpActivity">
+
+    <RelativeLayout
+        android:id="@+id/helpSettingsHelpRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="16dp"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/ivHelpSettingsHelp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/ic_baseline_help_outline_24"
+            app:tint="#8696a0"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ivHelpSettingsHelp"
+            android:text="@string/help"
+            android:textColor="@color/settings_page_header_color"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/helpSettingsContactUsRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/helpSettingsHelpRL"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="16dp"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/ivHelpSettingsContactUs"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/ic_baseline_group_24"
+            app:tint="#8696a0"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/a1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ivHelpSettingsContactUs"
+            android:text="@string/contact_us"
+            android:textColor="@color/settings_page_header_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/a1"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@id/ivHelpSettingsContactUs"
+            android:text="@string/questions_need_help"
+            android:textColor="@color/link_device_text_color"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/helpSettingsTermsAndPrivacyRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/helpSettingsContactUsRL"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="16dp"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/ivHelpSettingsTermsAndPrivacy"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="21dp"
+            android:src="@drawable/ic_baseline_account_info_24"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ivHelpSettingsTermsAndPrivacy"
+            android:text="@string/terms_and_privacy_policy"
+            android:textColor="@color/settings_page_header_color"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/helpSettingsAppInfoRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/helpSettingsTermsAndPrivacyRL"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="16dp"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/ivHelpSettingsAppInfo"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/ic_outline_info_24"
+            app:tint="#8696a0"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ivHelpSettingsAppInfo"
+            android:text="@string/app_info"
+            android:textColor="@color/settings_page_header_color"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

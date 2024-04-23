@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/whats_app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WhatsAppClone"
+        tools:targetApi="31">
+        <activity
+            android:name=".activities.AppInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.HelpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ChatSettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AccountSettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.UpdateProfileInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.LinkedDeviceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.FullScreenProfilePictureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ChatProfileInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AllContactActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SingleChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ProfileInfoSetupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.VerifyOtpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.EnterPhoneNumberActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activities.WelcomeAgreeAndContinueActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.HomeMainScreenActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

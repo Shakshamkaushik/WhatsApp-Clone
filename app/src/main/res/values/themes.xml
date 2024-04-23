@@ -1,0 +1,64 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.WhatsAppClone" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="itemTextAppearance">@style/PopupMenu</item>
+        <item name="itemBackground">@color/enter_number_next_btn_bg</item>
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:itemBackground">@color/main_screen_menu_options_bg_color</item>
+        <!--  Secondary brand color.  -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <!--        <item name="colorOnSecondary">@color/black</item>-->
+        <item name="android:statusBarColor">@color/tab_layout_bg_color</item>
+
+        <!--  Status bar color.  -->
+        <item name="actionOverflowMenuStyle">@style/CMOptionsMenuDay</item>
+
+    </style>
+
+
+    <style name="CMOptionsMenuDay" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:popupBackground">@android:color/white</item>
+    </style>
+
+    <!--PopUp Menu Theme-->
+    <style name="PopupMenu" parent="android:Theme.Holo.Light">
+        <item name="android:popupMenuStyle">@color/main_screen_menu_options_bg_color</item>
+        <item name="android:popupBackground">@color/main_screen_menu_options_bg_color</item>
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+        <item name="android:textColor">@color/settings_page_header_color</item>
+        <item name="android:textSize">16sp</item>
+        <!-- etc etc -->
+    </style>
+
+
+    <style name="button" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/agree_btn_bg</item>
+        <item name="android:textColor">#2D3235</item>
+        <item name="backgroundTint">@color/purple_700</item>
+    </style>
+    <!--    <style name="tabindiactorr" >-->
+    <!--        <item name="android:background">@drawable/agree_btn_bg</item>-->
+    <!--        <item name="backgroundTint">@colors.xml/purple_700</item>-->
+    <!--        <item name="android:radius">45dp</item>-->
+    <!--    </style>-->
+
+
+
+    <style name="appThemeChooserDialogTheme" parent="Theme.AppCompat.DayNight.Dialog.Alert">
+        <item name="android:background">@color/app_theme_selector_bg</item>
+        <item name="itemTextColor">@color/tab_layout_bg_color</item>
+
+    </style>
+
+
+    <style name="next_Button" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/agree_btn_bg</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/agree_and_continue_btn_bg</item>
+    </style>
+</resources>

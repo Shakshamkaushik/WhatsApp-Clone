@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/welcome_screen_bg_color"
+    tools:context=".fragments.ChatFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tab_layout_bg_color"
+                android:gravity="center"
+                android:paddingTop="27dp"
+                android:paddingBottom="5dp"
+                tools:ignore="UselessParent">
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="start"
+                    android:text="@string/whatsapp"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_marginStart="175dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/whatsapp_camera_icon"
+                    tools:ignore="contentDescription" />
+
+                <ImageView
+                    android:id="@+id/iv_chat_menu_option"
+                    android:layout_width="32dp"
+                    android:layout_height="29dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/three_dot_vertical"
+                    tools:ignore="contentDescription" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/searchview_bg_style">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="13dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_baseline_search_24"
+                    app:tint="@color/background_color"
+                    tools:ignore="contentDescription" />
+
+
+                <EditText
+                    android:id="@+id/etSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints="null"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/search"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:padding="16dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#5A5252"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/chatFragmentRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:itemCount="6"
+                tools:listitem="@layout/chat_message_rv_item" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
