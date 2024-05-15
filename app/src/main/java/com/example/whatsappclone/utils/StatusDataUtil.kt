@@ -11,7 +11,7 @@ class StatusDataUtil {
 
             recentStatusDataList.add(
                 StatusData(
-                    "Java ❤️",
+                    "Buddy ❤️",
                     "Just Now",
                     R.drawable.java
                 )
@@ -27,7 +27,7 @@ class StatusDataUtil {
 
             recentStatusDataList.add(
                 StatusData(
-                    "Ronney",
+                    "Rohit",
                     "Today, 3:35 pm",
                     R.drawable.user
                 )
@@ -43,7 +43,7 @@ class StatusDataUtil {
 
             recentStatusDataList.add(
                 StatusData(
-                    "Akshay",
+                    "Ak",
                     "Today, 5:08 am",
                     R.drawable.user
                 )
@@ -52,7 +52,7 @@ class StatusDataUtil {
 
             recentStatusDataList.add(
                 StatusData(
-                    "Paras",
+                    "Punnet",
                     "Yesterday, 9:59 pm",
                     R.drawable.user
                 )

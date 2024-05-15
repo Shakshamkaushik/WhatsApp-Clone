@@ -11,7 +11,7 @@ class CallDataUtils {
 
             callDataList.add(
                 CallDataModel(
-                    "Rishabh",
+                    "Rishav",
                     "20 December, 10:40 am",
                     R.mipmap.ic_launcher_round,
                     isReceived = false,
@@ -25,7 +25,7 @@ class CallDataUtils {
 
             callDataList.add(
                 CallDataModel(
-                    "Rinney",
+                    "Ronney",
                     "19 December, 8:32 am",
                     R.drawable.user,
                     isReceived = false,
@@ -39,7 +39,7 @@ class CallDataUtils {
 
             callDataList.add(
                 CallDataModel(
-                    "Rishabh",
+                    "Rishav",
                     "18 December, 3:32 am",
                     R.mipmap.ic_launcher_round,
                     isReceived = false,
@@ -53,7 +53,7 @@ class CallDataUtils {
 
             callDataList.add(
                 CallDataModel(
-                    "Java",
+                    "Buddy",
                     "18 December, 2:22 am",
                     R.drawable.java,
                     isReceived = false,
@@ -81,7 +81,7 @@ class CallDataUtils {
 
             callDataList.add(
                 CallDataModel(
-                    "Sachin Tendulkar & 3 others",
+                    "Buddy & 3 others",
                     "14 December, 11:18 pm",
                     R.drawable.sachin_tendulkar,
                     isReceived = true,
@@ -95,7 +95,7 @@ class CallDataUtils {
 
             callDataList.add(
                 CallDataModel(
-                    "Rishabh",
+                    "Rishav",
                     "13 December, 5:37 am",
                     R.mipmap.ic_launcher_round,
                     isReceived = true,
@@ -109,7 +109,7 @@ class CallDataUtils {
 
             callDataList.add(
                 CallDataModel(
-                    "Akash",
+                    "Akay",
                     "7 December, 10:45 am",
                     R.drawable.user,
                     isReceived = false,
@@ -123,7 +123,7 @@ class CallDataUtils {
 
             callDataList.add(
                 CallDataModel(
-                    "Rinney, Rishabh & 2 others",
+                    "Rinki, Rishabh & 2 others",
                     "3 December, 7:28 pm",
                     R.drawable.user,
                     isReceived = false,
@@ -137,7 +137,7 @@ class CallDataUtils {
 
             callDataList.add(
                 CallDataModel(
-                    "Paras",
+                    "Punnet",
                     "18 November, 11:30 am",
                     R.drawable.user,
                     isReceived = true,
@@ -165,7 +165,7 @@ class CallDataUtils {
 
             callDataList.add(
                 CallDataModel(
-                    "Java",
+                    "Buddy",
                     "16 December, 8:10 am",
                     R.drawable.java,
                     isReceived = true,
@@ -179,7 +179,7 @@ class CallDataUtils {
 
             callDataList.add(
                 CallDataModel(
-                    "Sachin Tendulkar & 3 others",
+                    "Sachin  & 3 others",
                     "2 October, 6:23 pm",
                     R.drawable.sachin_tendulkar,
                     isReceived = false,
@@ -193,7 +193,7 @@ class CallDataUtils {
 
             callDataList.add(
                 CallDataModel(
-                    "Paras",
+                    "Pathak",
                     "13 September, 5:37 am",
                     R.drawable.user,
                     isReceived = false,
@@ -207,7 +207,7 @@ class CallDataUtils {
 
             callDataList.add(
                 CallDataModel(
-                    "Akash",
+                    "Aksh",
                     "7 September, 10:45 am",
                     R.drawable.user,
                     isReceived = false,
@@ -219,19 +219,7 @@ class CallDataUtils {
                 )
             )
 
-            callDataList.add(
-                CallDataModel(
-                    "Shubham, Paras & 2 others",
-                    "15 August, 7:28 pm",
-                    R.drawable.shubham,
-                    isReceived = true,
-                    isReceivedAccepted = true,
-                    isReceivedRejected = false,
-                    isTransmitted = false,
-                    isTransmittedAccepted = false,
-                    isTransmittedRejected = false
-                )
-            )
+
 
             return callDataList
         }

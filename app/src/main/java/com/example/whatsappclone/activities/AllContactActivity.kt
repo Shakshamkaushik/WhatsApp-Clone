@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
@@ -30,6 +31,7 @@ class AllContactActivity : AppCompatActivity(), IContactClick {
     private lateinit var allContactAdapter: AllContactAdapter
     private lateinit var allContactRecyclerView: RecyclerView
     private lateinit var contactCount: TextView
+    private lateinit var BackArrow: ImageView
     private lateinit var refreshProgressBar: MenuItem
 
 
@@ -38,11 +40,16 @@ class AllContactActivity : AppCompatActivity(), IContactClick {
         setContentView(R.layout.activity_all_contact)
 
         toolbar = findViewById(R.id.toolbar)
+        BackArrow = findViewById(R.id.ivBackArrow)
         contactCount = findViewById(R.id.tvContactCount)
         allContactRecyclerView = findViewById(R.id.allContactRecyclerView)
 //        setSupportActionBar(toolbar)
 //        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 //        supportActionBar?.setDisplayShowTitleEnabled(false)
+
+        BackArrow.setOnClickListener {
+            startActivity(Intent(this, HomeMainScreenActivity::class.java))
+        }
     }
 
     override fun onResume() {
