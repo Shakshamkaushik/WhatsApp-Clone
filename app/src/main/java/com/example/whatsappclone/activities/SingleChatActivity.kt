@@ -224,7 +224,7 @@ class SingleChatActivity : AppCompatActivity(), TextWatcher {
 
         if (currentUSerId != null && isReadReceiptEnabled!!) {
             chats.forEachIndexed { index, chatMessage ->
-                if (chatMessage.getReceiverUid() == currentUSerId && !chatMessage.getIsMessageSeen()) {
+                if (chatMessage.getReceiverUid() == currentUSerId && chatMessage.getIsMessageSeen()) {
                     val messageId = chatIds[index]
                     messageCollectionRef.document(messageId).update("isMessageSeen", true)
                 }
