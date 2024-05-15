@@ -70,6 +70,7 @@
         android:layout_alignParentBottom="true"
         android:background="@color/bottom_navbar_background_color"
         android:paddingBottom="4dp"
+        android:paddingTop="4dp"
         app:itemIconTint="@color/color_item_bottom_nav"
         app:itemTextColor="@color/color_item_bottom_nav"
         app:menu="@menu/main_screen_bottom_nav" />
